@@ -25,7 +25,6 @@
           }
       }
 
-
       .bg {
           width: 100%;
           height: 100%;
@@ -38,13 +37,20 @@
           bottom: 0;
           left: 0;
           right: 0;
-          width: 120%;
           height: 100%;
-          opacity: 0.3;
           object-fit: cover;
-          object-position: left bottom;
+          object-position: right bottom;
           transform: scaleX(-1);
           mix-blend-mode: hard-light;
+          width: 120%;
+          opacity: 0.3;
+      }
+
+      @media only screen and (min-width: 1000px) {
+          .video {
+              width: 100%;
+              opacity: 0.4;
+          }
       }
 
       .overlay {
